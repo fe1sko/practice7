@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/пароль2"
+        android:layout_width="57dp"
+        android:layout_height="20dp"
+        android:text="телефон"
+        app:layout_constraintStart_toStartOf="@+id/пароль"
+        tools:layout_editor_absoluteY="239dp" />
+
+    <TextView
+        android:id="@+id/пароль"
+        android:layout_width="59dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="40dp"
+        android:text="пароль"
+        app:layout_constraintBottom_toTopOf="@+id/пароль2"
+        app:layout_constraintEnd_toStartOf="@+id/editTextPhone" />
+
+    <EditText
+        android:id="@+id/editTextPhone2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintBottom_toBottomOf="@+id/пароль2"
+        app:layout_constraintStart_toStartOf="@+id/editTextPhone" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginBottom="36dp"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/пароль"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintBottom_toBottomOf="@+id/пароль"
+        tools:layout_editor_absoluteX="109dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="291dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:text="RadioButton"
+        app:layout_constraintStart_toStartOf="@+id/пароль2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
